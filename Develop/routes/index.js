@@ -8,3 +8,9 @@ router.use((req, res) => {
 });
 
 module.exports = router;
+
+// LISTENING ON: 
+// localhost:3003/api/category
+// localhost:3003/api/product 
+// localhost:3003/api/producttag
+// localhost:3003/api/tag

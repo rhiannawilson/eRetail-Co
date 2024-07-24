@@ -6,7 +6,26 @@ class Category extends Model {}
 
 Category.init(
   {
-    // define columns
+    //define columns
+      title: {
+        type: DataTypes.STRING
+      },
+      author: {
+        type: DataTypes.STRING
+      },
+      isbn: {
+        type: DataTypes.STRING
+      },
+      pages: {
+        type: DataTypes.INTEGER
+      },
+      edition: {
+        type: DataTypes.INTEGER
+      },
+      // Will become `is_paperback` in table due to `underscored` flag
+      isPaperback: {
+        type: DataTypes.BOOLEAN
+    },
   },
   {
     sequelize,
