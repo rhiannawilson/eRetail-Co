@@ -15,7 +15,7 @@ Welcome to eRetail-Co, an internet retail platform! This ecommerce website purpo
 
 ## Walkthrough Video
 This assignment was submitted as requested via video demonstration, see below:
-- [Video Demo](https://drive.google.com/file/d/15rvslFZB9807FZFkwcwFUZ_WnMEYsVv5/view?usp=sharing)
+- [Video Demo](https://drive.google.com/file/d/1LTCEVd_3sRkZS2swos8iwV_N4dRFzrr7/view?usp=sharing)
 
 ### Directory Structure
 ```  
