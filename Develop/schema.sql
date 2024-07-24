@@ -23,7 +23,6 @@ category_id INTEGER,
 CREATE TABLE Tag (
 id SERIAL PRIMARY KEY, 
 tag_name VARCHAR(50)
-    FOREIGN KEY (tag_name) REFERENCES product(id)
 );
 
 CREATE TABLE ProductTag (
