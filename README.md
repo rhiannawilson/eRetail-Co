@@ -2,25 +2,26 @@
 A back end for an e-commerce website that uses the latest technologies to compete with other e-commerce internet retail companies!
 
 ## Description
-Welcome to Noteworthy, your go-to destination for effortless note-taking. With intuitive features and seamless syncing across devices, capturing ideas and staying organized has never been easier. Join our community today and unleash the power of effortless note-taking with Discover Noteworthy.
+Welcome to eRetail-Co, an internet retail platform! This ecommerce website purpose is to provide you with options to purchase and sell your products online. In this application, we focuse on building the back end by modifying starter code and working with Express.js API to use Sequelize to interact with a PostgreSQL database.
+
 
 ## Table of Contents:
 - [Description](#Description)
 - [Usage & Technical Details](#Usage)
-- [Usage Instructions](#Usage_Instructions)
 - [Credits](#Credits)
 - [Author](#Author)
 - [Contributions](#Contributions)
 - [License](#License)
 
-1. ![Github Repo](https://github.com/rhiannawilson/Noteworthy)
-2. ![Github Deployment]()
-
+## Walkthrough Video
+This assignment was submitted as requested via video demonstration, see below:
+- [Video Demo](https://drive.google.com/file/d/15rvslFZB9807FZFkwcwFUZ_WnMEYsVv5/view?usp=sharing)
 
 ### Directory Structure
 ```  
-├── NOTEWORTHY/
+├── eRetailCo/
     ├── assets/ 
+        ├── videodemo.mov
     ├── config/ 
         ├── config.json   
     ├── develop/  
@@ -51,18 +52,40 @@ Welcome to Noteworthy, your go-to destination for effortless note-taking. With i
         ├── .gitignore
         ├── package-lock.json
         ├── package.json
-        ├── server.js     
-    ├── migrations/
+        ├── server.js 
+     ├── .env 
     ├── models/
         ├── index.js
     ├── node_modules/
     ├── seeders/
-    ├── .env 
     ├── .gitignore 
     ├── LICENSE 
     ├── package-lock.json
     ├── package.json
     └── README.md        
+```
+## User Story
+
+```md
+AS A manager at an internet retail company
+I WANT a back end for my e-commerce website that uses the latest technologies
+SO THAT my company can compete with other e-commerce companies
+```
+
+## Acceptance Criteria
+
+```md
+GIVEN a functional Express.js API
+WHEN I add my database name, PostgreSQL username, and PostgreSQL password to an environment variable file
+THEN I am able to connect to a database using Sequelize
+WHEN I enter schema and seed commands
+THEN a development database is created and is seeded with test data
+WHEN I enter the command to invoke the application
+THEN my server is started and the Sequelize models are synced to the PostgreSQL database
+WHEN I open API GET routes in Insomnia for categories, products, or tags
+THEN the data for each of these routes is displayed in a formatted JSON
+WHEN I test API POST, PUT, and DELETE routes in Insomnia
+THEN I am able to successfully create, update, and delete data in my database
 ```
 
 ## Usage & Technical Details
@@ -71,47 +94,11 @@ Welcome to Noteworthy, your go-to destination for effortless note-taking. With i
 > - PostgresSQL
 > - Sequelize
 > - dotenv
+> - Insomnia - unit testing 
 
 #### .gitignore 
 > - node_modules/
 > - .DS_Store
-
-#### Usage_Instructions
-1. Open integrated terminal in your code editor
-2. Enter “node server.js” in the command line interface
-> ![how to run node server.js](./public/assets/images/CLI-nodeServer.js.jpeg)
-3. The following message will appear: "App listening at http://localhost:3001"
-> ![PORT MSG in CLI : App Listening Link](./public/assets/images/AppListening-MessageResponse.png)
-4. cmd + click http://localhost:3001
-> ![Noteworthy Intro page](./public/assets/images/NoteWorthy-IntroPage.png)
-5. and Enjoy the application in your browser and try creating a note!
-> ![Noteworthy Notes page](./public/assets/images/Noteworthy-NotesPage.png)
-6. Ctrl + C in your CLI to terminate 
-> ![Terminate the live PORT](./public/assets/images/ctrl+c-cancelLiveServer.png)
-
-## User Story
-```md
-AS A small business owner
-I WANT to be able to write and save notes
-SO THAT I can organize my thoughts and keep track of tasks I need to complete
-```
-
-## Acceptance Criteria
-```md
-GIVEN a note-taking application
-WHEN I open the Note Taker
-THEN I am presented with a landing page with a link to a notes page
-WHEN I click on the link to the notes page
-THEN I am presented with a page with existing notes listed in the left-hand column, plus empty fields to enter a new note title and the note’s text in the right-hand column
-WHEN I enter a new note title and the note’s text
-THEN a "Save Note" button and a "Clear Form" button appear in the navigation at the top of the page
-WHEN I click on the Save button
-THEN the new note I have entered is saved and appears in the left-hand column with the other existing notes and the buttons in the navigation disappear
-WHEN I click on an existing note in the list in the left-hand column
-THEN that note appears in the right-hand column and a "New Note" button appears in the navigation
-WHEN I click on the "New Note" button in the navigation at the top of the page
-THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column and the button disappears
-```
 
 ## Credits
 N/A
@@ -120,6 +107,6 @@ N/A
 #### @RhiannaWilson
 
 ## Contributions
-- Express Js
+- Express JS
 
 ## License ![alt text](https://img.shields.io/badge/License-_MIT-blue.svg)
